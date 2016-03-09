@@ -1,0 +1,77 @@
+<section id="products">
+    <div class=""></div>
+
+        <div ng-repeat="product in main">
+            <div ng-if="$index % 3 == 0" class="row">
+
+            <div class="col-md-4" ng-if="main.length>$index">
+                <div class="thumbnail">
+                    <img src="{{product[$index].images[0]}}">
+                    <div class="caption">
+                        <h4 class="pull-right">
+                            {{product[$index].display.screenSize}}
+                        </h4>
+                        <h4><a href="product.html">{{product[$index].name}}</a></h4>
+                        <p>{{product[$index].description}}</p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">15 Reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" ng-if="main.length>($index+1)">
+                <div class="thumbnail">
+                    <img src="{{product[$index+1].images[0]}}">
+                    <div class="caption">
+                        <h4 class="pull-right">
+                            {{product[$index+1].display.screenSize}}
+                        </h4>
+                        <h4><a href="product.html">{{product[$index+1].name}}</a></h4>
+                        <p>{{product[$index+1].description}}</p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">15 Reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4"  ng-if="main.length>($index+2)">
+                <div class="thumbnail">
+                    <img src="{{product[$index+2].images[0]}}">
+                    <div class="caption">
+                        <h4 class="pull-right">
+                            {{product[$index+2].display.screenSize}}
+                        </h4>
+                        <h4><a href="product[$index].html">{{product[$index+2].name}}</a></h4>
+                        <p>{{product[$index+2].description}}</p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">15 Reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+
+</section>
